@@ -16,7 +16,7 @@ ScreenShot:
 
 Pipeline:![heroku_ppl](heroku_ppl.png)
 
-Deployed app:
+Deployed app: (The app can only show a form and then pass info to back end, submission will let the page redirect to a submitted page and then print the collected json data)
 
 ![webapp_1](webapp_1.PNG)
 
