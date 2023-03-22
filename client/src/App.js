@@ -2,8 +2,7 @@ import React from "react";
 import PostForm from './component/PostForm'
 import Submitted from './component/Submitted'
 import './App.css';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 

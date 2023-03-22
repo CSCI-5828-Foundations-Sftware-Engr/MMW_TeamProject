@@ -1,4 +1,4 @@
-import { Link, Routes, Route, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 function Submitted({ route, navigation }) {
