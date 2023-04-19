@@ -18,14 +18,28 @@ function PostForm(props) {
         console.log(newData);
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
 
         e.preventDefault();
         console.log(data);
-        Axios.post('http://localhost:8001/register', data)
-            .then((result) => {
-                console.log(result)
+        let result = await fetch(
+            'http://localhost:5100/register', {
+                method: "post",
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             })
+        result = await result.json();
+        console.warn(result);
+        if (result) {
+            alert("Data saved succesfully");
+            setData({
+                name: "",
+                age: "",
+                email: ""
+            });
+        }
         navigate('/submitted', { state: data });
 
     }
