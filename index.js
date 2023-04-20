@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost:27017/', {
     dbName: 'MMW-final-proj',
     useNewUrlParser: true,
     useUnifiedTopology: true
-}, err => err ? console.log(err) : 
+}, err => err ? console.log(err) :
     console.log('Connected to MMW-final-proj database'));
 
 User.createIndexes();
@@ -28,7 +28,7 @@ app.get("/", (req, resp) => {
 
 app.post("/register", async (req, resp) => {
     console.log('got it');
-    const {password, name, email} = req.body;
+    const { password, name, email } = req.body;
     const hash = await bcrypt.hash(password, 12);
     console.log(hash);
     const user = new User({
@@ -47,17 +47,28 @@ app.post("/register", async (req, resp) => {
 
 app.post("/login", async (req, resp) => {
     console.log('got it');
-    const {password, email} = req.body;
-    const user = await User.findOne({email});
-    const valid = await bcrypt.compare(password, user.password);
-    if(valid){
-        resp.send("welcom")
+    console.log(req.body)
+    const { password, email } = req.body;
+
+    let user = await User.findOne({ email });
+    if (!user) {
+        resp.send({ status: 2 });
+        console.log('got it2');
+    } else {
+        const valid = await bcrypt.compare(password, user.password);
+        if (valid) {
+            let data = JSON.parse(JSON.stringify(user));
+            data.status = 1;
+            console.log(data);
+            resp.send(data);
+            console.log('got it1');
+        }
+        else {
+            resp.send({ status: 2 });
+            console.log('got it2');
+        }
     }
-    else{
-        resp.send('back')
-    }
-    
-    
+
 });
 
 // if not in production use the port 5000
