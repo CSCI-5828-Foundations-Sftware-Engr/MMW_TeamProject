@@ -54,10 +54,10 @@ function Recipes( { route, navigation}) {
                                     </p>
                                     <a href="/" class="btn btn-primary">Add to favorite</a>
                                 </div>
-
                             </div>
                         )
                     }
+                    return 0;
                 })}
             </div>
 
