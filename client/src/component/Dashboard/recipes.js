@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 // import pasta from "./pasta.json"
@@ -63,56 +63,6 @@ function Recipes( { route, navigation}) {
 
         </div>
     )
-
-    // // const API_KEY = "1"
-    // const API_URL0 = "www.themealdb.com/api/json/v1/1/search.php?";
-    // // const API_URL1 = "www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
-    // // const API_URL2 = "www.themealdb.com/api/json/v1/1/search.php?s=pasta";
-
-    // const [meal, setMeals] = useState([]);
-    // const [searchTerm, setSearchTerm] = useState([]);
-
-    // const searchMeals = async (title) => {
-    //     const response = await fetch(`${API_URL0}s=${title}`);
-    //     // const response = await fetch(API_URL1);
-    //     const data = await response.json();
-
-    //     // console.log(response);
-    //     // console.log(data);
-    //     console.log(data.meals);
-    //     setMeals(data.meals);
-    // }
-
-    // useEffect(() => {
-    //     searchMeals("pasta");
-    //     console.log("funciton used");
-    // }, []);
-
-    // return (<div>
-    {/* <input
-      placeholder="Search for recipes"
-      value={searchTerm}
-    //   value="test"
-      onChange={(e) => setSearchTerm(e.target.value)}
-    />
-    <img
-      src={SearchIcon}
-      alt="search"
-      onClick={() => searchMeals(searchTerm)}
-    />
-    {
-      meal.length > 0
-        ? (
-          <div>
-          <p>Meal found</p>
-          </div>
-        ) : (
-          <div><p>No meal found</p></div>
-        )
-    }; */}
-
-    {/* <h1>test</h1> */}
-
 }
 
 export default Recipes;
