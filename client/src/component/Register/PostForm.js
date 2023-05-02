@@ -111,8 +111,8 @@ function PostForm(props) {
                           <button class="btn btn-dark btn-lg btn-block" type="submit" value="Submit">Login</button>
                         </div>
 
-                        <p class="mb-5 pb-lg-2" >Already have an account? <Link to="/login"
-                        >Login here</Link></p>
+                        <p class="mb-5 pb-lg-2" >Already have an account? 
+                        <Link to="/login" >Login here</Link></p>
                       </form>
 
                     </div>

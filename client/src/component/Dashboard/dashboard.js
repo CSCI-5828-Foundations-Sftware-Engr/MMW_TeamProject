@@ -26,8 +26,8 @@ function Dashboard({ route, navigation }) {
                 <div class="sidenav">
                     <Link to="/userinfo" state={state}>User: {state.name}</Link>
                     <Link to="/recipes" state={state}>Recipes</Link>
-                    <Link to="/userinfo" state={state}>Loved recipes</Link>
-                    <Link to="/userinfo" state={state}>Shoplist</Link>
+                    <Link to="/userinfo" state={state}>Favorite Recipes</Link>
+                    <Link to="/shoppinglist" state={state}>Shopping List</Link>
                 </div>
 
                 <div class="main">

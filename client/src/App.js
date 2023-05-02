@@ -6,6 +6,7 @@ import Home from './component/Homepage/home'
 import About from './component/Homepage/about'
 import Dashboard from './component/Dashboard/dashboard'
 import Recipes from './component/Dashboard/recipes'
+import ShoppingList from "./component/Dashboard/shoppingList";
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -34,6 +35,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
 
           <Route path="/recipes" element={<Recipes />} />
+
+          <Route path="/shoppinglist" element={<ShoppingList />} />
 
         </Routes>
 
