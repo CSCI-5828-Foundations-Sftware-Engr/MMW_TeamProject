@@ -23,10 +23,7 @@ function About() {
             </nav>
 
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque
-                ratione amet. Earum dolores, qui, hic provident atque natus cumque
-                laboriosam quam nesciunt illo ut dolorem eos eligendi ullam
-                consequuntur?  </p>
+            <p>Do you want a perfect meal?  </p>
         </div>
 
     );
