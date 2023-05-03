@@ -23,7 +23,9 @@ function About() {
             </nav>
 
             <h2>About</h2>
-            <p>Do you want a perfect meal?  </p>
+            <p>Do you want a perfect meal? Do you find grocery shopping list troubling? Do you want
+             a auto-generated grocery list which directs you to a perfect meal? Check out our website
+             and your next perfect meal is awaiting! </p>
         </div>
 
     );
