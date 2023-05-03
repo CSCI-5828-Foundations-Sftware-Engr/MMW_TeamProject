@@ -32,10 +32,9 @@ function Home() {
       </nav>
 
       <h2>Home</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque
-        ratione amet. Earum dolores, qui, hic provident atque natus cumque
-        laboriosam quam nesciunt illo ut dolorem eos eligendi ullam
-        consequuntur?  </p>
+      <p>Do you want a perfect meal? Do you find grocery shopping list troubling? Do you want
+      a auto-generated grocery list which directs you to a perfect meal? Check out our website
+      and your next perfect meal is awaiting!  </p>
     </div>
 
   );
