@@ -51,6 +51,14 @@ function About() {
             Once the recipe has been saved to your account, you can generate the shopping list just by one click!
             </p>
 
+            <h3>Our Team</h3>
+            <p>
+            Do you want to know our glorious team members who prepare you your next shopping list?
+            </p>
+            <p>
+            Ash, Aladdin, April-10, Bean, Nico, XiaoMai
+            </p>
+
         </div>
 
     );
