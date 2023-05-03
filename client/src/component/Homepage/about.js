@@ -23,9 +23,11 @@ function About() {
             </nav>
 
             <h2>About</h2>
-            <p>Do you want a perfect meal? Do you find grocery shopping list troubling? Do you want
-             a auto-generated grocery list which directs you to a perfect meal? Check out our website
-             and your next perfect meal is awaiting! </p>
+            <p>Food preparation is a vital aspect of our daily routine.
+            We devote a substantial amount of time scouring through various recipes so as to attempt to create the perfect meal.
+            However, even before we try to cook, we must first come up with a grocery shopping list, which can be a tedious task.
+            Therefore, we have devised a website that can do the work for you!
+            Simply select the recipe that you are interested in, and we will generate a comprehensive shopping list for you automatically! </p>
         </div>
 
     );
