@@ -10,6 +10,7 @@ import ShoppingList from "./component/Dashboard/shoppingList";
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Highlights from "./component/Dashboard/highlights";
 
 
 
@@ -37,6 +38,8 @@ function App() {
           <Route path="/recipes" element={<Recipes />} />
 
           <Route path="/shoppinglist" element={<ShoppingList />} />
+
+          <Route path="/highlights" element={<Highlights />} />
 
         </Routes>
 

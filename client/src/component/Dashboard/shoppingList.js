@@ -24,7 +24,8 @@ function ShoppingList( {route, navigation} ) {
 
             <div class="sidenav">
                 <Link to="/userinfo" state={state}>User: {state.name}</Link>
-                <Link to="/recipes" state={state}>Recipes</Link>
+                <Link to="/highlights" state={state}>Highlights</Link>
+                <Link to="/recipes" state={state}>Search</Link>
                 <Link to="/recipes" state={state}>Favorite Recipes</Link>
                 <Link to="/shoppinglist" state={state}>Shopping List</Link>
             </div>
