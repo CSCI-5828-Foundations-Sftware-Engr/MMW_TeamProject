@@ -26,7 +26,7 @@ function About() {
             <h3>Our Aim</h3>
             <p>
             Food preparation is a vital aspect of our daily routine.
-            We devote a substantial amount of time scouring through various recipes so as to attempt to create the perfect meal.
+            We devote a substantial amount of time scouring through various recipes so as to attempt to create our perfect meal.
             However, even before we try to cook, we must first come up with a grocery shopping list, which can be a tedious task.
             Therefore, we have devised a website that can do the work for you!
             Simply select the recipe that you are interested in, and we will generate a comprehensive shopping list for you automatically!
@@ -42,7 +42,7 @@ function About() {
             <h3>From Recipe To Grocery List</h3>
             <h4>Add Recipes To Your Account</h4>
             <p>
-            We offer a large number of built-in recipes, but you can always add your own recipe to the website!
+            We offer a large number of built-in recipes, but you can always add your own recipe to your account!
             For recipes offered by us, just find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.
             For recipes from external resources, ???
             </p>
