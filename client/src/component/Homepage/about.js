@@ -40,9 +40,14 @@ function About() {
             </p>
 
             <h3>From Recipe To Grocery List</h3>
+            <h4>Add Recipes To Your Account</h4>
             <p>
             We offer a large number of built-in recipes, but you can always add your own recipe to the website!
-            Find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.
+            For recipes offered by us, just find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.
+            For recipes from external resources, ???
+            </p>
+            <h4>Generate Your Shopping List</h4>
+            <p>
             Once the recipe has been saved to your account, you can generate the shopping list just by one click!
             </p>
 
