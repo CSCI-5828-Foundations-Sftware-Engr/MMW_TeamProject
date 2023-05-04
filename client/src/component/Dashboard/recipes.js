@@ -19,7 +19,7 @@ function Recipes({ route, navigation }) {
         const data1 = await response.json();
         setRecipes(data1.meals);
         console.log("clicked");
-        console.log(recipes.length);
+        // console.log(recipes.length);
     }
 
     const saveToFav = async (index) => {
@@ -141,7 +141,7 @@ function Recipes({ route, navigation }) {
                             })}
                         </div>
                     ) : (
-                        <div>
+                        <div class="main">
                             <h2 class="text-center">No recipe found</h2>
                         </div>
                     )
