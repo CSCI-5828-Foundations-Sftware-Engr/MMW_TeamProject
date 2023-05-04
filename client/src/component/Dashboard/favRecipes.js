@@ -25,6 +25,8 @@ function FavRecipes({ route, navigation }) {
             }
         }
         setRecipes(d);
+        console.log(d.length);
+        // console.log(d == []);
     }
 
 
@@ -87,9 +89,8 @@ function FavRecipes({ route, navigation }) {
             </div>
 
 
-
             {
-                recipes != []
+                recipes.length !== 0
                     ? (
                         <div class="container">
                             {recipes.slice(0, 40).map(function (data, index) {
@@ -119,8 +120,9 @@ function FavRecipes({ route, navigation }) {
                             })}
                         </div>
                     ) : (
-                        <div>
-                            <h2 class="main">No recipe found</h2>
+                        <div class="main">
+                            <h2 >No Favorite recipes saved...</h2>
+                            <h2 >Go Add some!</h2>
                         </div>
                     )
             }
