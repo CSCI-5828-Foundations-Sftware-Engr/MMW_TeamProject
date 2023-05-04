@@ -38,6 +38,7 @@ function Recipes({ route, navigation }) {
                 'Content-Type': 'application/json'
             }
         });
+        console.log(result);
 
     }
 
@@ -60,6 +61,7 @@ function Recipes({ route, navigation }) {
                 'Content-Type': 'application/json'
             }
         });
+        console.log(result);
     }
 
     useEffect(() => {

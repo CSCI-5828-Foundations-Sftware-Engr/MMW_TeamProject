@@ -108,6 +108,7 @@ function ShoppingList({ route, navigation }) {
                                 </div>
                             )
                         }
+                        return 0;
 
                     })}
                 </div>

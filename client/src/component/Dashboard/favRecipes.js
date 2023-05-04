@@ -44,6 +44,7 @@ function FavRecipes({ route, navigation }) {
                 'Content-Type': 'application/json'
             }
         });
+        console.log(result);
     }
 
     useEffect(() => {

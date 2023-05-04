@@ -43,6 +43,7 @@ function Highlights({ route, navigation }) {
                 'Content-Type': 'application/json'
             }
         });
+        console.log(result);
 
     }
 
@@ -65,6 +66,7 @@ function Highlights({ route, navigation }) {
                 'Content-Type': 'application/json'
             }
         });
+        console.log(result);
     }
 
     useEffect(() => {
