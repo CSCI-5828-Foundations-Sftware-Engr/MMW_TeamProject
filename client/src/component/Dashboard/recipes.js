@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+
 const API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?";
 
 function Recipes({ route, navigation }) {
@@ -77,13 +80,13 @@ function Recipes({ route, navigation }) {
             <nav class="navbar inverse">
                 <ul>
                     <li >
-                        <Link to="/register">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li >
                         <Link to="/login">Logout</Link>
                     </li>
                     <li >
-                        <Link to="/about">About</Link>
+                        <Link to="/about">About Us</Link>
                     </li>
                 </ul>
                 <div class="input-group w-25 ms-auto">
@@ -94,7 +97,7 @@ function Recipes({ route, navigation }) {
 
 
             <div class="sidenav">
-                <Link to="/userinfo" state={state}>User: {state.name}</Link>
+                <Link to="/highlights" state={state}>User: {state.name}</Link>
                 <Link to="/highlights" state={state}>Highlights</Link>
                 <Link to="/recipes" state={state}>Search</Link>
                 <Link to="/favrecipes" state={state}>Favorite Recipes</Link>
@@ -112,18 +115,17 @@ function Recipes({ route, navigation }) {
                                     return (
                                         <div class="card item" style={{ width: 220 }}>
                                             <img src={data.strMealThumb} alt="" />
-                                            <div class="card-body">
+                                            <div class="card-body d-flex flex-column">
                                                 <h5 class="card-title">{data.strMeal}</h5>
                                                 <p class='card-text'>
                                                     {data.strArea}<br />
                                                     Ingredient: {data.strCategory}
                                                 </p>
-                                                <div class="row">
-                                                    <button id="btnSearch" class="btn btn-primary btn-md center-block" Style="width: 105px;"
+                                                <div class="row mt-auto">
+                                                    <button id="btnSearch" class="btn btn-outline-primary btn-md" Style="width: 150px;"
                                                         onClick={() => { saveToShop(index) }} >Add to list</button>
-                                                    <button id="btnClear" class="btn btn-danger btn-md center-block"
-                                                        Style="width: 105px;" onClick={() => { saveToFav(index) }} >Add to Favorite</button>
-
+                                                    <button id="btnClear" class="btn btn-md" Style="width: 60px;" 
+                                                        onClick={() => { saveToFav(index) }} ><FontAwesomeIcon icon={faHeart} size="lg" style={{color: "#d91261",}} /></button>
                                                 </div>
                                             </div>
                                         </div>

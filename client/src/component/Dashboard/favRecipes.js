@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 
 function FavRecipes({ route, navigation }) {
@@ -60,20 +62,20 @@ function FavRecipes({ route, navigation }) {
             <nav class="navbar inverse">
                 <ul>
                     <li >
-                        <Link to="/register">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li >
                         <Link to="/login">Logout</Link>
                     </li>
                     <li >
-                        <Link to="/about">About</Link>
+                        <Link to="/about">About Us</Link>
                     </li>
                 </ul>
             </nav>
 
 
             <div class="sidenav">
-                <Link to="/userinfo" state={state}>User: {state.name}</Link>
+                <Link to="/highlights" state={state}>User: {state.name}</Link>
                 <Link to="/highlights" state={state}>Highlights</Link>
                 <Link to="/recipes" state={state}>Search</Link>
                 <Link to="/favrecipes" state={state}>Favorite Recipes</Link>
@@ -91,15 +93,17 @@ function FavRecipes({ route, navigation }) {
                                     return (
                                         <div class="card item" style={{ width: 220 }}>
                                             <img src={data.strMealThumb} alt="" />
-                                            <div class="card-body">
+                                            <div class="card-body  d-flex flex-column">
                                                 <h5 class="card-title">{data.strMeal}</h5>
                                                 <p class='card-text'>
                                                     {data.strArea}<br />
                                                     Ingredient: {data.strCategory}
                                                 </p>
-                                                <button id="btnSearch" class="btn btn-primary btn-md center-block" Style="width: 105px;"
-                                                    onClick={() => { saveToShop(index) }} >Add to list</button>
-                                                {/* <i class="bi bi-bookmark-heart-fill float-end"></i> */}
+                                                <div class="row mt-auto">
+                                                    <button id="btnSearch" class="btn btn-outline-primary btn-md" Style="width: 150px;"
+                                                        onClick={() => { saveToShop(index) }} >Add to list</button>
+                                                    <button id="btnClear" class="btn btn-md" Style="width: 60px;"><FontAwesomeIcon icon={faHeart} size="lg" style={{color: "#d91261",}} /></button>
+                                                </div>    
                                             </div>
                                         </div>
                                     )

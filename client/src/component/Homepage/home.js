@@ -31,10 +31,11 @@ function Home() {
 
       </nav>
 
-      <h2>Home</h2>
-      <p>Do you want a perfect meal? Do you find grocery shopping list troubling? Do you want
-      a auto-generated grocery list which directs you to a perfect meal? Check out our website
-      and your next perfect meal is awaiting!  </p>
+      <h2 style={ {fontSize: "5rem"} }>Home</h2>
+      <p style={ {fontSize: "2rem"} }>Do you want a perfect meal?<br />
+      Do you find grocery shopping list troubling?<br />
+      Do you want an auto-generated grocery list which directs you to a perfect meal?<br />
+      Check out our website and your next perfect meal is awaiting!  </p>
     </div>
 
   );

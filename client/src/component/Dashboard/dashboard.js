@@ -11,20 +11,20 @@ function Dashboard({ route, navigation }) {
                 <nav class='navbar inverse'>
                     <ul>
                         <li >
-                            <Link to="/register">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li >
                             <Link to="/login">Logout</Link>
                         </li>
                         <li >
-                            <Link to="/about">About</Link>
+                            <Link to="/about">About Us</Link>
                         </li>
                     </ul>
 
                 </nav>
 
                 <div class="sidenav">
-                    <Link to="/userinfo" state={state}>User: {state.name}</Link>
+                    <Link to="/highlights" state={state}>User: {state.name}</Link>
                     <Link to="/highlights" state={state}>Highlights</Link>
                     <Link to="/recipes" state={state}>Search</Link>
                     <Link to="/favrecipes" state={state}>Favorite Recipes</Link>
