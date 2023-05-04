@@ -89,7 +89,7 @@ function FavRecipes({ route, navigation }) {
 
 
             {
-                recipes != []
+                recipes !== []
                     ? (
                         <div class="container">
                             {recipes.slice(0, 40).map(function (data, index) {
