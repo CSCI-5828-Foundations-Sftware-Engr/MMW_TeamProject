@@ -77,6 +77,7 @@ function About() {
                             We offer a large number of built-in recipes, but you can always add your own recipe to the website!<br />
                             Find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.<br />
                             Once the recipe has been saved to your account, you can generate the shopping list just by one click!<br />
+                            If you want to save the recipe for later use, click the heart icon and it will be saved to your favorite list.<br />
                         </p>
                     </div>
                     <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg" alt="" class="img-fluid mb-4 mb-lg-0" /></div>
