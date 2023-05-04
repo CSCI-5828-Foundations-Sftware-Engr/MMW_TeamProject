@@ -106,7 +106,7 @@ body {
 
   text-shadow: 1px 1px #676161;
   padding: 0 25% 0 25%;
-  font-size: 15px;
+  font-size: 12px;
   animation: typing 1s steps(22, end) forwards,
     blink 1s infinite;
 }
@@ -115,7 +115,7 @@ body {
   text-align: center;
   padding: 10% 0 5% 0;
   font-size: 30px;
-  animation: typing 0.5s steps(22, end) forwards,
+  animation: typing 1s steps(22, end) forwards,
     blink 1s infinite;
 }
 
@@ -124,7 +124,7 @@ body {
   font-weight: 200;
   padding: 0 25% 0 25%;
   font-size: 15px;
-  animation: typing 1s steps(22, end) forwards,
+  animation: typing 1.5s steps(22, end) forwards,
     blink 1s infinite;
 }
 
@@ -140,8 +140,8 @@ body {
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 4s steps(22, end) forwards,
-    blink 1s infinite;
+  animation: typing 5s steps(22, end) forwards,
+    blink 2s infinite;
 }
 
 @keyframes typing {

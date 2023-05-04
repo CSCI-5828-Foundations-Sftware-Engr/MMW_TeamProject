@@ -36,7 +36,7 @@ function Home() {
       </nav>
 
       <h2 style={{ fontSize: "5rem" }}>Home</h2>
-      <p style={{ fontSize: "2rem" }}>Do you want a perfect meal?<br />
+      <p style={{ fontSize: "1.5rem" }}>Do you want a perfect meal?<br />
         Do you find grocery shopping list troubling?<br />
         Do you want an auto-generated grocery list which directs you to a perfect meal?<br />
         Check out our website and your next perfect meal is awaiting!  </p>
