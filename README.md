@@ -9,6 +9,8 @@ Minyan Wang, Suming An, Wen Xu, Yan Zhan
 Link:  https://www.pivotaltracker.com/n/projects/2635063 
 
 ## Web application basic form, reporting
+The homepage presents icons which allow users to register, login as well as getting website's basci information.
+After the user logs in, the user can search recipes, add recipes to favorite and transfer the recipte to the grocery shopping list.
 
 ## Data collection
 
