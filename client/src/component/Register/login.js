@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import icon from "../../icon.png";
-import toast, { Toaster } from 'react-hot-toast';
 
 function Login(props) {
   const navigate = useNavigate();
@@ -37,11 +36,7 @@ function Login(props) {
     if (result.status === 1) {
       navigate('/highlights', { state: result });
     } else {
-      toast("Invalid email/password", {
-        duration: 2000,
-        position: 'top-center',
-        icon: '❌',
-      });
+      alert("invalid email/password");
       setData({
         email: "",
         password: ""
@@ -54,7 +49,7 @@ function Login(props) {
 
   return (
     <div>
-      <Toaster />
+      <title>sdsadas</title>
       <nav class='navbar'>
         <ul>
           <li class='actived'>

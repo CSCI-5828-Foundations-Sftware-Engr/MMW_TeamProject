@@ -36,13 +36,13 @@ function PostForm(props) {
     result = await result.json();
     console.log(result);
     if (result) {
+      alert("Data saved succesfully");
       setData({
         name: "",
         email: "",
         password: ""
       });
     }
-
     navigate('/login');
 
   }
