@@ -76,7 +76,7 @@ function About() {
                         <p class="font-italic text-muted mb-4">
                             We offer a large number of built-in recipes, but you can always add your own recipe to the website!<br />
                             Our website has daily recommendations, and you can check out 'Highlighted' if you need some inspiration for your meal!<br />
-                            To find the recipe that you are interested in, just use the 'search' page and you can look for recipes you want.<br />
+                            To find the recipe that you are interested in, just use the 'Search' page and you can look for recipes you want.<br />
                             To generate the shopping list, just click 'Add to list' under the recipe that you are interested in, and the shopping list will be automatically saved in your account.<br />
                             If you want to save the recipe for later use, click the heart icon and it will be saved to your favorite list.<br />
                         </p>
