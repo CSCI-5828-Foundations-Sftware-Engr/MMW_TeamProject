@@ -14,6 +14,13 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    recipes: {
+        type: [],
+    },
+    shoprecipes: {
+        type: []
+
+    }
 });
 
 module.exports = mongoose.model('users', UserSchema);

@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Highlights from "./component/Dashboard/highlights";
+import FavRecipes from "./component/Dashboard/favRecipes";
 
 
 
@@ -40,6 +41,8 @@ function App() {
           <Route path="/shoppinglist" element={<ShoppingList />} />
 
           <Route path="/highlights" element={<Highlights />} />
+
+          <Route path="/favrecipes" element={<FavRecipes />} />
 
         </Routes>
 

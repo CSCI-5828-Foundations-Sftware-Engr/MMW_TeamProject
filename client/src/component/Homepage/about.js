@@ -26,7 +26,7 @@ function About() {
             <h3>Our Aim</h3>
             <p>
             Food preparation is a vital aspect of our daily routine.
-            We devote a substantial amount of time scouring through various recipes so as to attempt to create our perfect meal.
+            We devote a substantial amount of time scouring through various recipes so as to attempt to create the perfect meal.
             However, even before we try to cook, we must first come up with a grocery shopping list, which can be a tedious task.
             Therefore, we have devised a website that can do the work for you!
             Simply select the recipe that you are interested in, and we will generate a comprehensive shopping list for you automatically!
@@ -40,23 +40,10 @@ function About() {
             </p>
 
             <h3>From Recipe To Grocery List</h3>
-            <h4>Add Recipes To Your Account</h4>
             <p>
-            We offer a large number of built-in recipes, but you can always add your own recipe to your account!
-            For recipes offered by us, just find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.
-            For recipes from external resources, ???
-            </p>
-            <h4>Generate Your Shopping List</h4>
-            <p>
+            We offer a large number of built-in recipes, but you can always add your own recipe to the website!
+            Find the recipe that you are interested in, and click 'Add to list', so you can add the recipe to your account.
             Once the recipe has been saved to your account, you can generate the shopping list just by one click!
-            </p>
-
-            <h3>Our Team</h3>
-            <p>
-            Do you want to know our glorious team members who prepare you your next shopping list?
-            </p>
-            <p>
-            Ash, Aladdin, April-10, Bean, Nico, XiaoMai
             </p>
 
         </div>

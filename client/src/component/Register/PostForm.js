@@ -34,7 +34,6 @@ function PostForm(props) {
       }
     })
     result = await result.json();
-    console.log('dsad')
     console.log(result);
     if (result) {
       alert("Data saved succesfully");
@@ -44,7 +43,7 @@ function PostForm(props) {
         password: ""
       });
     }
-    navigate('/submitted', { state: result });
+    navigate('/login');
 
   }
 
@@ -108,11 +107,11 @@ function PostForm(props) {
 
 
                         <div class="pt-1 mb-4">
-                          <button class="btn btn-dark btn-lg btn-block" type="submit" value="Submit">Login</button>
+                          <button class="btn btn-dark btn-lg btn-block" type="submit" value="Submit">Register</button>
                         </div>
 
-                        <p class="mb-5 pb-lg-2" >Already have an account? 
-                        <Link to="/login" >Login here</Link></p>
+                        <p class="mb-5 pb-lg-2" >Already have an account?
+                          <Link to="/login" >Login here</Link></p>
                       </form>
 
                     </div>

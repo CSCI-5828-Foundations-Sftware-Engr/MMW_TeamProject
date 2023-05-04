@@ -34,7 +34,7 @@ function Login(props) {
     result = await result.json();
     console.log(result);
     if (result.status === 1) {
-      navigate('/dashboard', { state: result });
+      navigate('/highlights', { state: result });
     } else {
       alert("invalid email/password");
       setData({

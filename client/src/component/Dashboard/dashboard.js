@@ -27,7 +27,7 @@ function Dashboard({ route, navigation }) {
                     <Link to="/userinfo" state={state}>User: {state.name}</Link>
                     <Link to="/highlights" state={state}>Highlights</Link>
                     <Link to="/recipes" state={state}>Search</Link>
-                    <Link to="/userinfo" state={state}>Favorite Recipes</Link>
+                    <Link to="/favrecipes" state={state}>Favorite Recipes</Link>
                     <Link to="/shoppinglist" state={state}>Shopping List</Link>
                 </div>
 
