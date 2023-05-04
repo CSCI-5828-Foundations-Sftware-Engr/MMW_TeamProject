@@ -44,46 +44,51 @@ app.get("/shoplist", async (req, resp) => {
 
 app.post("/shoplist", async (req, resp) => {
     const { name } = req.body;
-    let result = 0;
+    // let result = 0;
     let user = await User.findOne({ name });
-    let flag = false;
-    // for (let i in user.shoprecipes) {
-    //     if (user.shoprecipes[i].idMeal == req.body.idMeal) {
-    //         flag = true;
-    //     }
-    // }
-    if (!flag && req.body.idMeal != null) {
-        user.shoprecipes.push(req.body);
-        result = 1;
-        console.log('saved')
-    } else {
-        result = 2;
-        console.log('2')
-    }
-    await user.save();
-});
-
-
-app.post("/savedrecipes", async (req, resp) => {
-    const { name } = req.body;
-    let result = 0;
-    let user = await User.findOne({ name });
-    let flag = false;
+    // let flag = false;
+    user.shoprecipes.push(req.body);
     // for (let i in user.recipes) {
     //     console.log(i);
     //     if (user.recipes[i].idMeal == req.body.idMeal) {
     //         flag = true;
     //     }
     // }
-    if (!flag && req.body.idMeal != null) {
-        user.recipes.push(req.body);
-        result = 1;
-        console.log('d', req.body.name)
-    } else {
-        result = 2;
-        console.log('e', req.body.name)
-    }
+    // if (!flag && req.body.idMeal != null) {
+    //     user.recipes.push(req.body);
+    //     result = 1;
+    //     console.log('d', req.body.name)
+    // } else {
+    //     result = 2;
+    //     console.log('e', req.body.name)
+    // }
     await user.save();
+    console.log('saved to list');
+});
+
+
+app.post("/savedrecipes", async (req, resp) => {
+    const { name } = req.body;
+    // let result = 0;
+    let user = await User.findOne({ name });
+    // let flag = false;
+    user.recipes.push(req.body);
+    // for (let i in user.recipes) {
+    //     console.log(i);
+    //     if (user.recipes[i].idMeal == req.body.idMeal) {
+    //         flag = true;
+    //     }
+    // }
+    // if (!flag && req.body.idMeal != null) {
+    //     user.recipes.push(req.body);
+    //     result = 1;
+    //     console.log('d', req.body.name)
+    // } else {
+    //     result = 2;
+    //     console.log('e', req.body.name)
+    // }
+    await user.save();
+    console.log('saved to fav');
 
 });
 

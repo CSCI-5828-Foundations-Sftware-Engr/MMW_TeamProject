@@ -14,10 +14,12 @@ function ShoppingList({ route, navigation }) {
         )
         const data1 = await response.json();
         let d = [];
+        let b = [];
         let g = [];
         for (let i in data1) {
-            if (data1[i].idMeal != null) {
+            if (data1[i].idMeal != null && !b.includes(data1[i].idMeal)) {
                 d.push(data1[i]);
+                b.push(data1[i].idMeal);
                 for (let j = 1; j < 21; j++) {
 
                     if (data1[i]['strIngredient' + j.toString()] != null) {

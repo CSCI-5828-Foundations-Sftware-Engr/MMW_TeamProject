@@ -38,16 +38,18 @@ function Highlights({ route, navigation }) {
                 position: 'top-center',
                 icon: '🥰',
             });
+
+            let result = await fetch(
+                'http://localhost:5100/savedrecipes', {
+                method: "post",
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            console.log(result);
+
         }
-        let result = await fetch(
-            'http://localhost:5100/savedrecipes', {
-            method: "post",
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        console.log(result);
 
     }
 
@@ -61,16 +63,18 @@ function Highlights({ route, navigation }) {
                 position: 'top-center',
                 icon: '🛒',
             });
+
+            let result = await fetch(
+                'http://localhost:5100/shoplist', {
+                method: "post",
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            console.log(result);
         }
-        let result = await fetch(
-            'http://localhost:5100/shoplist', {
-            method: "post",
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        console.log(result);
+
     }
 
     useEffect(() => {

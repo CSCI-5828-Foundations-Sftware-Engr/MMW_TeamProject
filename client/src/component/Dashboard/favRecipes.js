@@ -17,9 +17,11 @@ function FavRecipes({ route, navigation }) {
         )
         const data1 = await response.json();
         let d = [];
+        let b = [];
         for (let i in data1) {
-            if (data1[i].idMeal != null) {
+            if (data1[i].idMeal != null && !b.includes(data1[i].idMeal)) {
                 d.push(data1[i]);
+                b.push(data1[i].idMeal);
             }
         }
         setRecipes(d);
@@ -37,16 +39,17 @@ function FavRecipes({ route, navigation }) {
                 position: 'top-center',
                 icon: '🛒',
             });
+            let result = await fetch(
+                'http://localhost:5100/savedrecipes', {
+                method: "post",
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            console.log(result);
         }
-        let result = await fetch(
-            'http://localhost:5100/shoplist', {
-            method: "post",
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        console.log(result);
+
     }
 
     useEffect(() => {
@@ -86,7 +89,7 @@ function FavRecipes({ route, navigation }) {
 
 
             {
-                recipes != null
+                recipes != []
                     ? (
                         <div class="container">
                             {recipes.slice(0, 40).map(function (data, index) {
@@ -112,7 +115,7 @@ function FavRecipes({ route, navigation }) {
                                         </div>
                                     )
                                 }
-                                return 0;
+                                return (null);
                             })}
                         </div>
                     ) : (
