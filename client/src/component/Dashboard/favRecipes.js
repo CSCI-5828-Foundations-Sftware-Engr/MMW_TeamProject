@@ -40,7 +40,7 @@ function FavRecipes({ route, navigation }) {
                 icon: '🛒',
             });
             let result = await fetch(
-                'http://localhost:5100/savedrecipes', {
+                'http://localhost:5100/shoplist', {
                 method: "post",
                 body: JSON.stringify(data),
                 headers: {
