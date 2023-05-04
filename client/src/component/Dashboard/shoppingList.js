@@ -113,7 +113,7 @@ function ShoppingList({ route, navigation }) {
                                 </div>
                             )
                         }
-                        return;
+                        return (null);
 
                     })}
                 </div>
