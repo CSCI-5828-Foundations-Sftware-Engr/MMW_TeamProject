@@ -35,7 +35,7 @@ function ShoppingList({ route, navigation }) {
 
     useEffect(() => {
         getFavRecipes();
-        document.title = 'Fav Recipes';
+        document.title = 'Shop List';
     }, []);
 
 
