@@ -47,17 +47,18 @@ app.post("/shoplist", async (req, resp) => {
     let result = 0;
     let user = await User.findOne({ name });
     let flag = false;
-    for (let i in user.shoprecipes) {
-        if (user.shoprecipes[i].idMeal == req.body.idMeal) {
-            flag = true;
-        }
-    }
+    // for (let i in user.shoprecipes) {
+    //     if (user.shoprecipes[i].idMeal == req.body.idMeal) {
+    //         flag = true;
+    //     }
+    // }
     if (!flag && req.body.idMeal != null) {
         user.shoprecipes.push(req.body);
         result = 1;
         console.log('saved')
     } else {
         result = 2;
+        console.log('2')
     }
     await user.save();
 });
@@ -68,11 +69,12 @@ app.post("/savedrecipes", async (req, resp) => {
     let result = 0;
     let user = await User.findOne({ name });
     let flag = false;
-    for (let i in user.recipes) {
-        if (user.recipes[i].idMeal == req.body.idMeal) {
-            flag = true;
-        }
-    }
+    // for (let i in user.recipes) {
+    //     console.log(i);
+    //     if (user.recipes[i].idMeal == req.body.idMeal) {
+    //         flag = true;
+    //     }
+    // }
     if (!flag && req.body.idMeal != null) {
         user.recipes.push(req.body);
         result = 1;

@@ -14,7 +14,7 @@ function Dashboard({ route, navigation }) {
                             <Link to="/">Home</Link>
                         </li>
                         <li >
-                            <Link to="/login">Logout</Link>
+                            <Link to="/">Logout</Link>
                         </li>
                         <li >
                             <Link to="/about">About Us</Link>

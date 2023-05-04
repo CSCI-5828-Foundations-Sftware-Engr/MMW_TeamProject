@@ -77,6 +77,7 @@ function Highlights({ route, navigation }) {
         searchRecipes();
         saveToFav();
         saveToShop();
+        document.title = 'Highlighted Recipes';
     }, []);
 
     return (
@@ -88,7 +89,7 @@ function Highlights({ route, navigation }) {
                         <Link to="/">Home</Link>
                     </li>
                     <li >
-                        <Link to="/login">Logout</Link>
+                        <Link to="/">Logout</Link>
                     </li>
                     <li >
                         <Link to="/about">About Us</Link>
@@ -118,13 +119,16 @@ function Highlights({ route, navigation }) {
                                     <h5 class="card-title">{data.strMeal}</h5>
                                     <p class='card-text'>
                                         {data.strArea}<br />
-                                        Ingredient: {data.strCategory}
+                                        <p style={{ fontSize: 13, fontWeight: 600, paddingBottom: 0, paddingTop: 15, marginBottom: 0 }}>Ingredients:</p>
+                                        <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0 }}>&nbsp;  {data.strIngredient1}: {data.strMeasure1}</p>
+                                        <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0 }}>&nbsp;  {data.strIngredient2}: {data.strMeasure2}</p>
+                                        <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0, textAlign: "center" }}>...</p>
                                     </p>
                                     <div class="row mt-auto">
                                         <button id="btnSearch" class="btn btn-outline-primary btn-md" Style="width: 150px;"
                                             onClick={() => { saveToShop(index) }} >Add to list</button>
-                                        <button id="btnClear" class="btn btn-md" Style="width: 60px;" 
-                                            onClick={() => { saveToFav(index) }} ><FontAwesomeIcon icon={faHeart} size="lg" style={{color: "#d91261",}} /></button>
+                                        <button id="btnClear" class="btn btn-md" Style="width: 60px;"
+                                            onClick={() => { saveToFav(index) }} ><FontAwesomeIcon icon={faHeart} size="lg" style={{ color: "#d91261", }} /></button>
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +139,7 @@ function Highlights({ route, navigation }) {
             </div>
 
 
-        </div>
+        </div >
     )
 }
 

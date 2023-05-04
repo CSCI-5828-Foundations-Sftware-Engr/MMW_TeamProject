@@ -35,6 +35,7 @@ function ShoppingList({ route, navigation }) {
 
     useEffect(() => {
         getFavRecipes();
+        document.title = 'Fav Recipes';
     }, []);
 
 
@@ -46,7 +47,7 @@ function ShoppingList({ route, navigation }) {
                         <Link to="/">Home</Link>
                     </li>
                     <li >
-                        <Link to="/login">Logout</Link>
+                        <Link to="/">Logout</Link>
                     </li>
                     <li >
                         <Link to="/about">About Us</Link>
@@ -64,20 +65,24 @@ function ShoppingList({ route, navigation }) {
             </div>
 
 
-            <div class="container text-center ">
-                <div class="col-md-6 text-center">
-                    <h4>Dishes</h4>
+            <div class="container ">
+                <div class="col-md-6">
+                    <h4 style={{ textAlign: "center" }}>Dishes</h4>
                     <div class="row ">
                         {recipes.map(function (data, index) {
                             return (
-                                <div class="card  item" style={{ width: 220 }}>
+                                <div class="card item" style={{ width: 220 }}>
                                     <img src={data.strMealThumb} alt="" />
-                                    <div class="card-body">
+                                    <div class="card-body  d-flex flex-column">
                                         <h5 class="card-title">{data.strMeal}</h5>
                                         <p class='card-text'>
                                             {data.strArea}<br />
-                                            Ingredient: {data.strCategory}
+                                            <p style={{ fontSize: 13, fontWeight: 600, paddingBottom: 0, paddingTop: 15, marginBottom: 0 }}>Ingredients:</p>
+                                            <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0 }}>&nbsp;  {data.strIngredient1}: {data.strMeasure1}</p>
+                                            <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0 }}>&nbsp;  {data.strIngredient2}: {data.strMeasure2}</p>
+                                            <p style={{ fontSize: 13, paddingBottom: 0, paddingTop: 0, marginBottom: 0, textAlign: "center" }}>...</p>
                                         </p>
+
                                     </div>
                                 </div>
                             )
@@ -86,7 +91,7 @@ function ShoppingList({ route, navigation }) {
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4">
-                    <h4>Ingredients</h4>
+                    <h4 style={{ textAlign: "center" }}>Ingredients</h4>
                     <div class="d-flex justify-content-between">
                         <div >
                             <p class='ingredient-b in-block' >Ingredient </p>
@@ -108,7 +113,7 @@ function ShoppingList({ route, navigation }) {
                                 </div>
                             )
                         }
-                        return 0;
+                        return;
 
                     })}
                 </div>
