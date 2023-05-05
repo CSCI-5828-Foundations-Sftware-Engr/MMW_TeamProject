@@ -17,6 +17,9 @@ We initially tried a Kaggle dataset which did not work out because it lacked key
 huge library of recipes with names, ingredients and images.
  
 ## Data analyzer
+We decompose the recipes and collect ingredients from the recipes.
+Then we generate a list of shopping items according to the ingredients.
+For the repetitive items, we just keep it as a single item but add the amount of the item.
 
 ## Unit tests
 
