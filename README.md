@@ -22,7 +22,7 @@ Then we generate a list of shopping items according to the ingredients.
 For the repetitive items, we just keep it as a single item but add the amount of the item.
 
 ## Unit tests
-Jest?
+
 
 ## Data persistence
 MongoDB
