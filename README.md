@@ -39,6 +39,7 @@ node.js
 ---
 
 ## Integration tests
+React integration tests.
 
 ## Using mock objects or any test doubles
 
