@@ -25,7 +25,7 @@ For the repetitive items, we just keep it as a single item but add the amount of
 Jest?
 
 ## Data persistence
-MongoDB atlas center?
+MongoDB
 
 ## Rest collaboration internal or API endpoint
 http://localhost:5100/savedrecipes
