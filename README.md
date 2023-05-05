@@ -37,15 +37,19 @@ For the repetitive items, we just keep it as a single item but add the amount of
 ## Using mock objects or any test doubles
 
 ## Continuous integration
+GitHub Actions. node.js.yml workflow.
 
 ## Production monitoring instrumenting
+
+We used Grafana but later just used Heroku metrics to monitor.
 
 ---
 
 ## Acceptance tests
 
 ## Event collaboration messaging
+We had weekly in-person meetings to discuss our developments of the project.
 
 ## Continuous delivery
-
+GitHub Actions and also Heroku to deploy.
 
