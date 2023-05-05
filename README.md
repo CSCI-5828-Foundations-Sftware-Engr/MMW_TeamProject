@@ -46,7 +46,7 @@ node.js
 GitHub Actions. node.js.yml workflow.
 
 ## Production monitoring instrumenting
-We used Grafana but later just used Heroku metrics to monitor.
+We first used Grafana but later just used Heroku metrics to monitor.
 
 ---
 
