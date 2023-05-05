@@ -22,8 +22,10 @@ Then we generate a list of shopping items according to the ingredients.
 For the repetitive items, we just keep it as a single item but add the amount of the item.
 
 ## Unit tests
+Jest?
 
 ## Data persistence
+MongoDB atlas center?
 
 ## Rest collaboration internal or API endpoint
 
@@ -40,7 +42,6 @@ For the repetitive items, we just keep it as a single item but add the amount of
 GitHub Actions. node.js.yml workflow.
 
 ## Production monitoring instrumenting
-
 We used Grafana but later just used Heroku metrics to monitor.
 
 ---
