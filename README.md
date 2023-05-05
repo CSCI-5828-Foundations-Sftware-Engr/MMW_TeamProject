@@ -22,8 +22,6 @@ We decompose the recipes and collect ingredients from the recipes.
 Then we generate a list of shopping items according to the ingredients.
 For the repetitive items, we just keep it as a single item but add the amount of the item.
 
-### Unit tests
-
 
 ### Data persistence
 MongoDB
@@ -42,7 +40,6 @@ node.js
 ### Integration tests
 React integration tests.
 
-### Using mock objects or any test doubles
 
 ### Continuous integration
 GitHub Actions. node.js.yml workflow.
