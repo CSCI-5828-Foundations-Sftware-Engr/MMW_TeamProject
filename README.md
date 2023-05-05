@@ -57,7 +57,7 @@ We ask some random users to try out the website and collect their opinions on
 the major features they want and how easily they find it to use the website.
 
 ## Event collaboration messaging
-We had weekly in-person meetings to discuss our developments of the project.
+We had weekly in-person meetings to discuss our developments of the project and used Fetch.
 
 ## Continuous delivery
 GitHub Actions and also Heroku to deploy.
