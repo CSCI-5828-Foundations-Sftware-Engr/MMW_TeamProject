@@ -28,6 +28,10 @@ Jest?
 MongoDB atlas center?
 
 ## Rest collaboration internal or API endpoint
+http://localhost:5100/savedrecipes
+http://localhost:5100/shoplist
+http://localhost:5100/register
+http://localhost:5100/login
 
 ## Product environment
 
