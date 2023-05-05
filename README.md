@@ -52,6 +52,9 @@ We first used Grafana but later just used Heroku metrics to monitor.
 ---
 
 ## Acceptance tests
+We conducted a user acceptance testing.
+We ask some random users to try out the website and collect their opinions on 
+the major features they want and how easily they find it to use the website.
 
 ## Event collaboration messaging
 We had weekly in-person meetings to discuss our developments of the project.
